@@ -1,0 +1,23 @@
+1. as tags segundarias para estruturas da calculadoras são: <div> e <button>
+2. os elementos do css são body e align-items: center;
+3. Function calculate(){
+    if(operator === null || firstOperand === null) return;
+    let secondOperand = parseFloat(currentNumber.replace(",","."));
+    let resultValue;
+
+    switch (operator) {
+        case "+":
+            resultValue = firstOperand + secondOperand;
+            break;
+        case "-":
+            resultValue = firstOperand - secondOperand;
+            break;
+        case "x":
+            resultValue = firstOperand * secondOperand;
+            break;
+        case "÷":
+            resultValue = firstOperand / secondOperand;
+            break;
+        default:
+            return;
+    }
